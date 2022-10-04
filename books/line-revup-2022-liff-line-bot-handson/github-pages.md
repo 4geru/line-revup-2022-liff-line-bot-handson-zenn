@@ -1,8 +1,6 @@
 ---
-title: "LIFF の設定"
+title: "Github pages の設定"
 ---
-
-## LIFF の設定
 
 ## project を fork する
 
@@ -51,4 +49,29 @@ npm run deploy
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-open-github-pages-edit.png)
 
+`Visit site` をクリックすると、deploy を行ったページを確認できます
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-unlogin-page.png)
+
+### LIFF の登録
+
+公開したページを LIFF のリダイレクト先に設定します。
+
+LIFF アプリからの作成は、LIFF タブから `追加` ボタンを押します
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/line-liff-create-edit.png)
+
+| ラベル | 値 |
+| :--- | :--- |
+| LIFFアプリ名 | Rev UP 2022 LIFF
+| サイズ | Tall
+| エンドポイントURL | github pages のリンク
+| Scope | ✅ profile
+| ボットリンク機能 | On (Aggressive)
+
 ## microCMS の動作確認
+
+LIFF の登録が完了すると LIFF URL が発行されます。
+LINE アプリから LIFF のページを開くとアプリの確認が可能です。
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-pages.png)
