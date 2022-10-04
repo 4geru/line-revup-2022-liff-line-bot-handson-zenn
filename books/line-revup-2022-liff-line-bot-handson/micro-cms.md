@@ -24,16 +24,18 @@ title: "micro CMS の設定"
 
 左側のコンテンツ（API）タブをクリックし、microCMSに保存するデータの形式を登録していきます。
 
-APIを作成 > 自分で決める を選択します。
+`APIを作成` > `自分で決める` を選択します。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-create-api.png)
 
-> Q. ここらへん全て画像があったほうがいいか？文字だけで伝わるかフィードバック欲しいです
+:::message alert
+Q. ここらへん全て画像があったほうがいいか？文字だけで伝わるかフィードバック欲しいです
+:::
 
-step1. APIキー「liff」 / エンドポイント「liff」
-step2. APIの型を選択 「リスト形式」
-step3. 「ファイルインポートする場合は `こちら` から。」のこちらからをクリックし、追加します。
-先ほど解凍した zip ファイルのディレクトリから、 microCmsSetting.json を指定し登録します。
+1. APIキー「liff」 / エンドポイント「liff」
+2. APIの型を選択 「リスト形式」
+3. 「ファイルインポートする場合は `こちら` から。」のこちらからをクリックし、追加します。
+  先ほど解凍した zip ファイルのディレクトリから、 `microCmsSetting.json` を指定し登録します。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-setup-api.png)
 
