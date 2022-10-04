@@ -2,6 +2,10 @@
 title: "LINE Developers の設定"
 ---
 
+:::message alert
+TODO: LIFF / LINE Bot の画面を混乱しないように修正する
+:::
+
 ## LINE Bot / LIFF の開発準備
 
 LINE Bot / LIFF の開発を行う上で、 LINE Developers のログインが必要になります。

@@ -24,7 +24,9 @@ title: "Github pages の設定"
 ## Github pages を公開する
 ### Github pages とは
 
-> TODO: 説明を書く
+:::message alert
+TODO: 説明を書く
+:::
 
 ### 公開の仕方
 先ほど fork したリポジトリのページに遷移し、 clone します。
