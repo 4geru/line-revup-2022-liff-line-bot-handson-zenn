@@ -12,12 +12,19 @@ title: "Github pages の設定"
 
 ## 環境変数の設定
 
+:::message alert
+- package.json の homepage のリンクは変える必要がある？
+:::
+
 ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-new-environment-edit.png)
+
+
 
 | 環境変数名 | 値 |
 | :--- | :--- |
-| MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` |
-| MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の動画の場所にあります。 |
+| REACT_APP_LIFF_ID | `LIFF の設定ページ` > `LIFF` > `LIFF ID` をコピーします |
+| REACT_APP_MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` |
+| REACT_APP_MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の動画の場所にあります。 |
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-micro-cms-show-api-key-edit.png)
 
@@ -25,7 +32,7 @@ title: "Github pages の設定"
 ### Github pages とは
 
 :::message alert
-TODO: 説明を書く
+- TODO: 説明を書く
 :::
 
 ### 公開の仕方
