@@ -2,26 +2,6 @@
 title: "Github pages の設定"
 ---
 
-## project を fork する
-
-[4geru/line-revup-2022-liff-line-bot-handson](https://github.com/4geru/line-revup-2022-liff-line-bot-handson) に移動し、リポジトリを fork します。
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-fork-github-edit.png)
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-confirm-github-edit.png)
-
-## 環境変数の設定
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-new-environment-edit.png)
-
-| 環境変数名 | 値 |
-| :--- | :--- |
-| REACT_APP_LIFF_ID | `LIFF の設定ページ` > `LIFF` > `LIFF ID` をコピーします |
-| REACT_APP_MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` |
-| REACT_APP_MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の動画の場所にあります。 |
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-micro-cms-show-api-key-edit.png)
-
 ## Github pages を公開する
 ### Github pages とは
 
@@ -30,32 +10,13 @@ title: "Github pages の設定"
 
 [GitHub Pages | Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/)
 
-### 公開の仕方
-先ほど fork したリポジトリのページに遷移し、 clone します。
-clone するリポジトリの情報は、github の fork からコピーします。
+## project を fork する
 
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-clone-edit.png)
+[4geru/line-revup-2022-liff-line-bot-handson](https://github.com/4geru/line-revup-2022-liff-line-bot-handson) に移動し、リポジトリを fork します。
 
-お使いのターミナルから、git clone コマンドを利用し、ローカルで必要なものをセットアップします。
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-fork-github-edit.png)
 
-```sh
-git clone https://github.com/USER_NAME/line-revup-2022-liff-line-bot-handson.git
-```
-
-必要なパッケージをインストールし、github に deploy を行います。
-
-```sh
-npm install
-npm run deploy
-```
-
-リポジトリの Settings > Pages を開き branch を main から gh-pages に変更します。
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-open-github-pages-edit.png)
-
-`Visit site` をクリックすると、deploy を行ったページを確認できます
-
-![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-unlogin-page.png)
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-confirm-github-edit.png)
 
 ### LIFF の登録
 
@@ -72,6 +33,48 @@ LIFF アプリからの作成は、LIFF タブから `追加` ボタンを押し
 | エンドポイントURL | github pages のリンク
 | Scope | ✅ profile
 | ボットリンク機能 | On (Aggressive)
+
+### 公開の仕方
+先ほど fork したリポジトリのページに遷移し、 clone します。
+clone するリポジトリの情報は、github の fork からコピーします。
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-clone-edit.png)
+
+お使いのターミナルから、git clone コマンドを利用し、ローカルで必要なものをセットアップします。
+
+```sh
+git clone https://github.com/USER_NAME/line-revup-2022-liff-line-bot-handson.git
+cd line-revup-2022-liff-line-bot-handson
+```
+
+## 環境変数の設定
+
+.env.sample を元に .env を作成し、必要な情報を記入します。
+
+```sh
+cp .env.sample .env
+```
+
+| 環境変数名 | 値 |
+| :--- | :--- |
+| REACT_APP_LIFF_ID | `LIFF の設定ページ` > `LIFF` > `LIFF ID` をコピーします |
+| REACT_APP_MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` |
+| REACT_APP_MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の動画の場所にあります。 |
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-micro-cms-show-api-key-edit.png)
+
+## デプロイ
+
+必要なパッケージをインストールし、github に deploy を行います。
+
+```sh
+npm install
+npm run deploy
+```
+
+`Visit site` をクリックすると、deploy を行ったページを確認できます
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-unlogin-page.png)
 
 ## 動作確認
 

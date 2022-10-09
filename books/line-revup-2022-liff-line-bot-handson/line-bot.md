@@ -73,6 +73,11 @@ LIE Bot の設定画面から Wehbook の設定を行います。
 
 ### LINE Bot の動作確認
 
+> > LINE Bot の設定
+
+`Messaging API設定` の QR または ID から、 Bot を追加します。
+Bot にメッセージを送るとそのままのメッセージが返答されます。
+
 ## MicroCMS の webhook の登録
 
 `API設定` > `Webhook` > `追加` から Webhook の設定をします。

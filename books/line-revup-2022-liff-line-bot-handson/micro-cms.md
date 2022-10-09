@@ -16,7 +16,8 @@ title: "micro CMS の設定"
 
 ## サービスの作成
 
-[サービスを作成](https://app.microcms.io/create-service) からサービスの作成を行います
+[サービスを作成](https://app.microcms.io/create-service) からサービスの作成を行います。
+サービスの作成が完了すると `サービスにアクセスする` ボタンを押します。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-create-service.png)
 
