@@ -86,4 +86,5 @@ LIE Bot の設定画面から Wehbook の設定を行います。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/gas-micro-cms-webhook-edit.png)
 
-### MicroCMS の動作確認
+### 動作確認
+管理画面から microCMS の値を変更すると、Spreadsheet にログが保存され、 LINE Bot にメッセージが届きます。

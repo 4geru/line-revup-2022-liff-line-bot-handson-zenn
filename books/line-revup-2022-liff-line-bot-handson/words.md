@@ -16,4 +16,14 @@ title: "用語集"
 
 ### microCMS
 
+> microCMSはAPIベースの日本製ヘッドレスCMSです。
+快適な管理画面により、開発・運用コストを大きく削減することで、ビジネスを加速させます。
+
+[microCMS｜APIベースの日本製ヘッドレスCMS](https://microcms.io/)
+
 ### Github pages
+
+> Hosted directly from your GitHub repository. Just edit, push, and your changes are live.
+> GitHub リポジトリから直接ホストされます。 編集してプッシュするだけで、変更が反映されます。
+
+[GitHub Pages | Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.](https://pages.github.com/)

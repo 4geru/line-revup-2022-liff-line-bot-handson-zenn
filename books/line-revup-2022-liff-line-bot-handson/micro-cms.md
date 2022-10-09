@@ -39,3 +39,10 @@ title: "micro CMS の設定"
 作成ボタンをクリックし、コンテンツの作成を完了させます。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-check-api.png)
+
+## API の設定
+
+`1個の APIキー` > `default` をクリックし、下記のページに遷移します。
+`デフォルト権限` を `POST` / `PATCH` を有効にします。
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-change-get-post-patch-edit.png)
