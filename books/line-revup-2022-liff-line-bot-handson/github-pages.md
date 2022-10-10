@@ -30,7 +30,7 @@ LIFF アプリからの作成は、LIFF タブから `追加` ボタンを押し
 | :--- | :--- |
 | LIFFアプリ名 | Rev UP 2022 LIFF
 | サイズ | Tall
-| エンドポイントURL | github pages のリンク
+| エンドポイントURL | github pages のリンク<br />USER_NAME を変えて登録してください。<br />`https://USER_NAME.github.io/line-revup-2022-liff-line-bot-handson/`
 | Scope | ✅ profile
 | ボットリンク機能 | On (Aggressive)
 
@@ -72,13 +72,17 @@ npm install
 npm run deploy
 ```
 
-`Visit site` をクリックすると、deploy を行ったページを確認できます
+デプロイを実行すると github action が実行され、黄色から緑に変化します。
+
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-action-check-edit.png)
+
+ページの確認は、 `Settings` > `Pages` から `Visit site` をクリックすると、deploy を行ったページを確認できます
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-unlogin-page.png)
 
 ## 動作確認
 
-LIFF の登録が完了すると LIFF URL が発行されます。
+初回ログインの際は、LINEログインの承認画面が表示されます。
 LIFF は PC のブラウザからログイン可能ですが、LINEのアプリブラウザからログインすると、一部分のみ表示されることがわかります。
 
 | PC | LINE アプリ |

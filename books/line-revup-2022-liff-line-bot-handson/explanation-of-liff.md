@@ -4,6 +4,8 @@ title: "LIFF の解説"
 
 ## React について
 
+状態管理
+
 ## LIFF API について
 開発上の注意点は [LIFFアプリ開発ガイドライン](https://developers.line.biz/ja/docs/liff/development-guidelines/) を確認してください
 APIの詳細は [LIFF v2 APIリファレンス](https://developers.line.biz/ja/reference/liff/) を確認してください
