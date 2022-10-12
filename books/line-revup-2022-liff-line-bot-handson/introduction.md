@@ -23,10 +23,6 @@ React(LIFF) で変更した情報を microCMS に保存します。
 保存した時の webhook アクションから LINE Bot を通じユーザーに通知を伝えます。
 
 ## 事前準備
-:::message alert
-TODO: アカウントの登録方法を書く
-TODO: 事前にユーザーにお伝えする手段を考える
-:::
 
 必要なアカウントは以下の 3 種類が必要になります。
 - microCMS
@@ -44,17 +40,3 @@ TODO: 事前にユーザーにお伝えする手段を考える
 ## 利用技術
 - React
 - Google App Script
-
-:::message alert
-全体的にパッと見て
-- DONE: github pages にサンプルの URL あった方がいいかな
-- DONE: 最初に用語集みたいなのを作った方がいいかな
-  - A. 最後に書き込む
-- DONE: コピーする箇所が多いので、どこの情報をコピーしたのかわかりやすくしたい
-  - A. コピーする値に名前をつけていく
-- DONE: 手を動かすだけなので、課題を設定したい
-  - A. microCMS に count を置いて、カウントアップ / ダウンとかできるようにする
-  - A. LINE Bot のメッセージをアレンジできるようにする
-- DONE: microCMS の post の設定
-- TODO: package.json の homepage のリンク
-:::
