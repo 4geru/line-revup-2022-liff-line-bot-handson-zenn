@@ -14,6 +14,10 @@ title: "micro CMS の設定"
 - [microCMS アカウント作成](https://app.microcms.io/signup)
 - [microCMS ログイン](https://app.microcms.io/signin)
 
+:::message alert
+- TODO: サービス名とIDについて記述があるといいなと思いました
+:::
+
 ## サービスの作成
 
 [サービスを作成](https://app.microcms.io/create-service) からサービスの作成を行います。
@@ -47,3 +51,8 @@ title: "micro CMS の設定"
 `デフォルト権限` を `POST` / `PATCH` を有効にします。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-change-get-post-patch-edit.png)
+
+:::message alert
+- TODO: 他のところも心配する
+- TODO: 最後、変更ボタンをクリック忘れそうかなと思いました
+:::

@@ -17,7 +17,8 @@ LINE Bot / LIFF の開発を行う上で、 LINE Developers のログインが�
 :::
 
 ## LINE Bot の設定
-LINE Bot は、[LINE console](https://developers.line.biz/console/) から「Messaging API」から設定を行います。
+
+[LINE console](https://developers.line.biz/console/) から「新規チャンネルの追加」をクリックし、「Messaging API」を選択します。
 
 以下の値を設定し、「LINE公式アカウント利用規約」と「LINE公式アカウントAPI利用規約」に同意をし、登録します。
 ※ チャンネル名に、 LINE が含まれるメッセージは設定できません。
@@ -47,7 +48,7 @@ LINE Bot は、[LINE console](https://developers.line.biz/console/) から「Mes
 | チャネル説明 | Rev UP 2022 Login アプリです |
 | アプリタイプ | ウェブアプリ |
 
-チャネル基本設定 > リンクされたボット > `Rev UP 2022` を指定することで、 LIFF 利用時に自動で LINE Bot を追加することができます。
+チャネル基本設定 > リンクされたボット > `Rev UP 2022 Bot` を指定することで、 LIFF 利用時に自動で LINE Bot を追加することができます。
 
 ## LINE Bot と LIFF のアカウントの見分け方
 

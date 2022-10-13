@@ -22,7 +22,14 @@ LINE Bot の設定画面から変更を行います。
 | :--- | :--- |
 | `CHANNEL_ACCESS_TOKEN` | `Messaging API設定` > `チャネルアクセストークン` から `発行` をクリック<br />発行したトークンを貼り付けます。 |
 | `LINE_USER_ID` | `チャネル基本設定` > `あなたのユーザーID` を貼り付けます。 |
-| `SHEET_URL` | 先ほどコピーしたスプレッドシートの URL です。 |
+| `SHEET_URL` | 先ほどコピーしたスプレッドシートの URL です。 TODO: example をかく|
+
+:::message alert
+> 環境変数の設定
+> 先ほどコピーしたスプレッドシートの URL です。
+
+URLの形式があるとより親切かなと思いました。
+:::
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/gas-const-gs-edit.png)
 
@@ -92,4 +99,21 @@ Bot にメッセージを送るとそのままのメッセージが返答され�
 ![](/images/books/line-revup-2022-liff-line-bot-handson/gas-micro-cms-webhook-edit.png)
 
 ### 動作確認
+
+:::message alert
+- 動作確認で、「管理画面」という言葉が初登場なので、？になりそうな気がしました。
+- Githubで公開したpageのことだとヒントがあるとよいかなと思いました。
+
+- LIFF だけ？ 管理画面？ 両方？
+  - 両方かきましょう！！
+:::
+
 管理画面から microCMS の値を変更すると、Spreadsheet にログが保存され、 LINE Bot にメッセージが届きます。
+
+:::message alert
+繰り返し動作確認を行うと、一つ前に入力した内容がSpreadsheetに書き込まれ、LINEに届くようになりました。
+行ったこととしては、
+途中で、Text, Textareaともに空っぽにしてSubmitしました。
+
+- 本質的には あった場合作らない処理を入れる必要がありそう
+:::

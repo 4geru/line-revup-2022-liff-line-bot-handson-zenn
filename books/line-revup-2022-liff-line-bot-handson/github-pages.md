@@ -26,6 +26,10 @@ LIFF アプリからの作成は、LIFF タブから `追加` ボタンを押し
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/line-liff-create-edit.png)
 
+:::message alert
+- TODO: https://USER_NAME.github.io/line-revup-2022-liff-line-bot-handson/ が 404 なのを解説する
+:::
+
 | ラベル | 値 |
 | :--- | :--- |
 | LIFFアプリ名 | Rev UP 2022 LIFF
@@ -51,14 +55,21 @@ cd line-revup-2022-liff-line-bot-handson
 
 .env.sample を元に .env を作成し、必要な情報を記入します。
 
+:::message alert
+環境変数の設定のところ、
+'cp .env.sample .env'
+はwindowsの場合は違うコマンド
+'copy .env.sample .env'
+:::
+
 ```sh
 cp .env.sample .env
 ```
 
 | 環境変数名 | 値 |
 | :--- | :--- |
-| REACT_APP_MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の動画の場所にあります。 |
-| REACT_APP_MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` |
+| REACT_APP_MICRO_CMS_API_KEY | microCMS の API キーを設定します。 API キーは下記の画像の場所にあります。 |
+| REACT_APP_MICRO_CMS_SERVICE_DOMAIN | 作成した microCMS のサービスの URL の一部 <br /> `https://xxxxxxxxxx.microcms.io/apis/liff` <br /> ※ xxxxx のところのみ |
 | REACT_APP_LIFF_ID | `LIFF の設定ページ` > `LIFF` > `LIFF ID` をコピーします |
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-micro-cms-show-api-key-edit.png)
@@ -85,6 +96,14 @@ npm run deploy
 初回ログインの際は、LINEログインの承認画面が表示されます。
 LIFF は PC のブラウザからログイン可能ですが、LINEのアプリブラウザからログインすると、一部分のみ表示されることがわかります。
 
+:::message alert
+【優先度高いかも】
+ログイン後、画像のようにTextbox,Textarea,Submit buttonが表示されない
+↓
+環境変数の「REACT_APP_MICRO_CMS_SERVICE_DOMAIN」の記述を間違えていたから
+xxxxxxxxの部分だけとか明記があったほうがよいと思いました
+:::
+
 | PC | LINE アプリ |
-| :--- | :--- |
+| :---: | :---: |
 | ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-github-check-deployed-pages.png =500x) | ![](/images/books/line-revup-2022-liff-line-bot-handson/liff-login-from-line-app-edit.jpeg =300x)
