@@ -1,5 +1,5 @@
 ---
-title: "GAS の解説"
+title: "LINE Bot の解説"
 ---
 
 ## microCMS からのリクエスト

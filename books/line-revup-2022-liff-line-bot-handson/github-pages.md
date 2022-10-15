@@ -1,5 +1,5 @@
 ---
-title: "Github pages の設定"
+title: "LIFF の設定"
 ---
 
 ## Github pages を公開する
@@ -26,8 +26,8 @@ LIFF アプリからの作成は、LIFF タブから `追加` ボタンを押し
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/line-liff-create-edit.png)
 
-:::message alert
-- TODO: https://USER_NAME.github.io/line-revup-2022-liff-line-bot-handson/ が 404 なのを解説する
+:::message
+- エンドポイントURL は Github Pages のデプロイが終わるまで、 404 です。
 :::
 
 | ラベル | 値 |

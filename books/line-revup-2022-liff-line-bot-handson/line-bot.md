@@ -1,5 +1,5 @@
 ---
-title: "GAS の設定"
+title: "LINE Bot の設定"
 ---
 
 ## SpreadSheet の作成
@@ -22,14 +22,7 @@ LINE Bot の設定画面から変更を行います。
 | :--- | :--- |
 | `CHANNEL_ACCESS_TOKEN` | `Messaging API設定` > `チャネルアクセストークン` から `発行` をクリック<br />発行したトークンを貼り付けます。 |
 | `LINE_USER_ID` | `チャネル基本設定` > `あなたのユーザーID` を貼り付けます。 |
-| `SHEET_URL` | 先ほどコピーしたスプレッドシートの URL です。 TODO: example をかく|
-
-:::message alert
-> 環境変数の設定
-> 先ほどコピーしたスプレッドシートの URL です。
-
-URLの形式があるとより親切かなと思いました。
-:::
+| `SHEET_URL` | 先ほどコピーしたスプレッドシートの URL です。<br />例： `https://script.google.com/macros/s/Xxxxx/exec `|
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/gas-const-gs-edit.png)
 

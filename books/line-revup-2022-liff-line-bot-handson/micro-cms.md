@@ -14,16 +14,19 @@ title: "micro CMS の設定"
 - [microCMS アカウント作成](https://app.microcms.io/signup)
 - [microCMS ログイン](https://app.microcms.io/signin)
 
-:::message alert
-- TODO: サービス名とIDについて記述があるといいなと思いました
-:::
-
 ## サービスの作成
 
 [サービスを作成](https://app.microcms.io/create-service) からサービスの作成を行います。
 サービスの作成が完了すると `サービスにアクセスする` ボタンを押します。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-create-service.png)
+
+サービス名とサービスIDについて、公式には下記のように記載されています。
+
+> サービス名にはmicroCMSの導入を考えているプロダクト名や組織名を入力すると良いでしょう。
+サービスIDは管理画面のURL、APIのエンドポイントのサブドメインに設定される値です。
+
+参照；[サービスの作成](https://document.microcms.io/manual/create-service)
 
 ## コンテンツの作成
 
@@ -40,10 +43,24 @@ title: "micro CMS の設定"
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-setup-api.png)
 
+APIスキーマについては、 [APIスキーマ設定](https://document.microcms.io/manual/api-model-settings) にまとまっています。
+
+| APIスキーマ | 表示名 |
+| :--- | :--- |
+| フィールドID | APIレスポンスのプロパティ名です。
+| 表示名 | コンテンツを入力する際に表示されます。
+| 種類 | コンテンツを入力する際の入力フォームを指定することができます。<br/>[フィールドの詳細設定項目](https://document.microcms.io/manual/api-model-settings#h1993cddc9a) の値が登録可能です。
+
 ダウンロードが完了すると以下のような状態になります。
-作成ボタンをクリックし、コンテンツの作成を完了させます。
+`作成ボタン` をクリックし、コンテンツの作成を完了させます。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-check-api.png)
+
+| フィールド名 | 表示名 | |
+| :--- | :--- | :--- |
+| userId | LINE ユーザーID | LINE の userId<br />フィールドの設定：<br />1. 必須事項<br/>2. 詳細編集 > 重複を許可しない（ユニーク）
+| title | タイトル | LIFF フォームから入力する値
+| content | 本文 | LIFF フォームから入力する値
 
 ## API の設定
 
@@ -52,7 +69,6 @@ title: "micro CMS の設定"
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/micro-cms-change-get-post-patch-edit.png)
 
-:::message alert
-- TODO: 他のところも心配する
-- TODO: 最後、変更ボタンをクリック忘れそうかなと思いました
+:::message
+- `変更` をすることを忘れないでください。
 :::
