@@ -2,7 +2,22 @@
 title: "今回のハンズオンについて"
 ---
 
-## はじめに
+## 事前準備
+
+- node.js インストールをおねがいします。
+  - [Download | Node.js](https://nodejs.org/en/download/)
+
+必要なアカウントは以下の 4 種類が必要になります。
+- microCMS
+  - [microCMS アカウント作成](https://app.microcms.io/signup)
+  - [microCMS ログイン](https://app.microcms.io/signin)
+- github
+  - [github](https://github.com/)
+- google
+  - [Google account](https://www.google.com/account/about/)
+- line developers の登録
+  - [LINE Developersコンソールにログインする](https://developers.line.biz/ja/docs/line-developers-console/login-account/#log-in-to-line-developers-console)
+  - [開発者アカウントを作成する（初回ログイン時のみ）](https://developers.line.biz/ja/docs/line-developers-console/login-account/#register-as-developer)
 
 ## ハンズオンの対象者
 - LINE API の利用経験がない方
@@ -42,27 +57,6 @@ LINE ログインすると、LINEの表示名とアイコンが表示されま�
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/line-bot-notice-view.jpeg =300x)
 
-## 事前準備
-
-- node / npm の設定
-
-必要なアカウントは以下の 4 種類が必要になります。
-- microCMS
-  - [microCMS アカウント作成](https://app.microcms.io/signup)
-  - [microCMS ログイン](https://app.microcms.io/signin)
-- github
-  - [github](https://github.com/)
-- google
-  - [Google account](https://www.google.com/account/about/)
-- line developers の登録
-  - [LINE Developersコンソールにログインする](https://developers.line.biz/ja/docs/line-developers-console/login-account/#log-in-to-line-developers-console)
-  - [開発者アカウントを作成する（初回ログイン時のみ）](https://developers.line.biz/ja/docs/line-developers-console/login-account/#register-as-developer)
-
-
 ## 利用技術
-:::message alert
-- TODO: node / npm の環境構築までしてね
-:::
-
 - React
 - Google App Script
