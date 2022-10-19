@@ -1,5 +1,24 @@
 title: "【LINE API 総集編】ReactとmicroCMSで作るLINEミニアプリハンズオン"
-summary: ""
+summary:
+  "LIFF と LINE Bot を利用した簡単なアプリを作ります。
+
+  対象：
+
+  * LINE API の利用経験がない方
+
+  * LIFF / LINE Bot どちらかで開発をおこなったことがある方
+
+  * microCMS の利用経験がない方
+
+
+  LIFF または LINE Bot どちらかを触ったことはあるけど、
+  もう片方チャレンジしたことないという方も多いのではないでしょうか？
+  今回は、LIFF を React / LINE Bot を GAS で利用し、データストアとして microCMS を利用します。
+  それぞれ独立した環境を利用し、他のプラットフォーム / 言語 で置き換えられるシンプルな作りです。
+
+
+  ハンズオンに参加すると React / microCMS / LIFF / LINE Messaging API への理解が深まります。
+  "
 topics: ['line', 'react', 'github', 'microCMS']
 published: false
 price: 0 # 有料の場合200〜5000
