@@ -55,16 +55,16 @@ cd line-revup-2022-liff-line-bot-handson
 
 .env.sample を元に .env を作成し、必要な情報を記入します。
 
-:::message alert
-環境変数の設定のところ、
-'cp .env.sample .env'
-はwindowsの場合は違うコマンド
-'copy .env.sample .env'
-:::
-
+Mac / Linux の場合は、下記のコマンドです
 ```sh
 cp .env.sample .env
 ```
+
+Windowsの場合は、下記のコマンドです
+```sh
+copy .env.sample .env
+```
+
 
 | 環境変数名 | 値 |
 | :--- | :--- |
@@ -96,12 +96,8 @@ npm run deploy
 初回ログインの際は、LINEログインの承認画面が表示されます。
 LIFF は PC のブラウザからログイン可能ですが、LINEのアプリブラウザからログインすると、一部分のみ表示されることがわかります。
 
-:::message alert
-【優先度高いかも】
-ログイン後、画像のようにTextbox,Textarea,Submit buttonが表示されない
-↓
-環境変数の「REACT_APP_MICRO_CMS_SERVICE_DOMAIN」の記述を間違えていたから
-xxxxxxxxの部分だけとか明記があったほうがよいと思いました
+:::message
+もし、フォームが表示されない場合は、環境変数名が間違っていないかの確認をしましょう
 :::
 
 | PC | LINE アプリ |

@@ -93,20 +93,11 @@ Bot にメッセージを送るとそのままのメッセージが返答され�
 
 ### 動作確認
 
-:::message alert
-- 動作確認で、「管理画面」という言葉が初登場なので、？になりそうな気がしました。
-- Githubで公開したpageのことだとヒントがあるとよいかなと思いました。
 
-- LIFF だけ？ 管理画面？ 両方？
-  - 両方かきましょう！！
-:::
+microCMS の 管理画面から値を変更すると、Spreadsheet にログが保存され、 LINE Bot にメッセージが届きます。
 
-管理画面から microCMS の値を変更すると、Spreadsheet にログが保存され、 LINE Bot にメッセージが届きます。
+![](/images/books/line-revup-2022-liff-line-bot-handson/microcms-detail.png)
 
-:::message alert
-繰り返し動作確認を行うと、一つ前に入力した内容がSpreadsheetに書き込まれ、LINEに届くようになりました。
-行ったこととしては、
-途中で、Text, Textareaともに空っぽにしてSubmitしました。
+先ほど登録した LIFF の画面からも値の変更をすると LINE Bot にメッセージが届くようになっています。
 
-- 本質的には あった場合作らない処理を入れる必要がありそう
-:::
+![](/images/books/line-revup-2022-liff-line-bot-handson/liff-login-from-line-app-edit.jpeg =300x)

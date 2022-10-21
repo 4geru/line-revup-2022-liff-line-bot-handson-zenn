@@ -59,4 +59,4 @@ LINE ログインすると、LINEの表示名とアイコンが表示されま�
 
 ## 利用技術
 - React
-- Google App Script
+- GAS(Google App Script)
