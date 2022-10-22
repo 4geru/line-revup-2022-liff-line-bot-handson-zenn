@@ -20,6 +20,8 @@ function App() {
         setLiffState([liff, isLogin])
       })
       ...
+  }, [])
+
   const [liffObject, isLogin] = liffState
   ...
 ```
