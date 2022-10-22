@@ -29,10 +29,10 @@ title: "今回のハンズオンについて"
 LIFF は、 LINE Front-end Framework の略で、LINE の情報をフロントエンドで使うためのものです。
 Messaging API(以下： LINE Bot) は、 LINE 公式アカウントを通じて サーバーと LINE アプリ をつなげます。ユーザーからメッセージを受け取ると https の path に対して、 webhook を送信できます。
 
-ブラウザ or LINE内ブラウザ からReact(LIFF) で変更した情報を microCMS に保存します。
-保存した時の webhook アクションから LINE Bot を通じユーザーに通知を伝えます。
-
 LIFF / LINE Bot の説明を深くしたいため、React / GAS(Google App Script) を非常にシンプルな作りにしています。React / GAS の依存をなくすため、データの保存先に microCMS にデータを保存します。
+
+ブラウザ or LINE内ブラウザ からフォームを変更した情報をデータベース(microCMS)に保存します。
+保存した時の webhook アクションから LINE Bot を通じユーザーに通知を伝えます。
 
 ![](/images/books/line-revup-2022-liff-line-bot-handson/introduction-goal-image.jpeg)
 
@@ -42,9 +42,6 @@ React の tutorial([Quick Start](https://beta.reactjs.org/learn))を拡張した
 今回のハンズオンは終了後に是非お得意のフレームワークで置き換えてみてください。
 
 ## 画面
-今回は、React の tutorial 機能を拡張したシンプルなアプリを作成します。
-tutorial ページ [Quick Start](https://beta.reactjs.org/learn)
-
 ### ブラウザ画面
 LINE ログインすると、LINEの表示名とアイコンが表示されます。
 

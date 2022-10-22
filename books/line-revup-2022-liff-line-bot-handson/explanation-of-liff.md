@@ -3,8 +3,26 @@ title: "LIFF の解説"
 ---
 
 ## React について
+### useState / useEffect
+[github App.js](https://github.com/4geru/line-revup-2022-liff-line-bot-handson/blob/main/src/App.js#L11-L38)
 
-状態管理
+[Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+[Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+
+```ts
+function App() {
+  const [liffState, setLiffState] = useState([null, false]);
+  useEffect(() => {
+    liff
+      .init({ liffId: process.env.REACT_APP_LIFF_ID })
+      .then(() => {
+       ...
+        setLiffState([liff, isLogin])
+      })
+      ...
+  const [liffObject, isLogin] = liffState
+  ...
+```
 
 ## LIFF API について
 開発上の注意点は [LIFFアプリ開発ガイドライン](https://developers.line.biz/ja/docs/liff/development-guidelines/) を確認してください
