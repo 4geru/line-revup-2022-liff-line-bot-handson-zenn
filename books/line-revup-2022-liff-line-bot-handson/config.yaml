@@ -20,7 +20,7 @@ summary:
   ハンズオンに参加すると React / microCMS / LIFF / LINE Messaging API への理解が深まります。
   "
 topics: ['line', 'react', 'github', 'microCMS']
-published: false
+published: true
 price: 0 # 有料の場合200〜5000
 # 本に含めるチャプターを順番に並べましょう
 chapters:
