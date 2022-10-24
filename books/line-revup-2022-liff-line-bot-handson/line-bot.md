@@ -57,9 +57,7 @@ LINE Bot の設定画面から変更を行います。
 
 ## LINE Bot の設定
 
-> > LINE Bot の設定
-
-LIE Bot の設定画面から Wehbook の設定を行います。
+LINE Bot の設定画面から Wehbook の設定を行います。
 
 `Webhook設定` > `Webhook URL` に `デプロイURL` を貼り付け `更新` をします。
 保存が成功すると `Webhookの利用` のチェックボックスが出るので、有効にします。
