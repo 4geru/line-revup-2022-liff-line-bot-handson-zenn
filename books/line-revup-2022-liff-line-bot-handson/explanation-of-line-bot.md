@@ -17,16 +17,16 @@ App Script > replyMessage に書かれています。
 
 :::details replyMessage
 ```js
-const postMessage = (userId, messages) => {
-  UrlFetchApp.fetch('https://api.line.me/v2/bot/message/push', { // = LINE Messaging APIの利用に必要な固定URL
+const replyMessage = (replyToken, messages) => {
+  UrlFetchApp.fetch('https://api.line.me/v2/bot/message/reply', { // = LINE Messaging APIの利用に必要な固定URL
      'headers': {
        'Content-Type': 'application/json; charset=UTF-8',
        'Authorization': 'Bearer ' + CHANNEL_ACCESS_TOKEN, // = LINE返信メッセージに必要な固定URL
      },
      'method': 'post',
      'payload': JSON.stringify({
-        to: userId,　//ユーザーID
-        messages: messages
+       'replyToken': replyToken, // = リプライトークン
+       'messages': messages,
      }),
    });
 }
@@ -44,16 +44,16 @@ LINE の webhook の設定がされている時のみ利用可能です。
 
 :::details requestFromLineAPI
 ```js
-const replyMessage = (replyToken, messages) => {
-  UrlFetchApp.fetch('https://api.line.me/v2/bot/message/reply', { // = LINE Messaging APIの利用に必要な固定URL
+const pushMessage = (userId, messages) => {
+  UrlFetchApp.fetch('https://api.line.me/v2/bot/message/push', { // = LINE Messaging APIの利用に必要な固定URL
      'headers': {
        'Content-Type': 'application/json; charset=UTF-8',
        'Authorization': 'Bearer ' + CHANNEL_ACCESS_TOKEN, // = LINE返信メッセージに必要な固定URL
      },
      'method': 'post',
      'payload': JSON.stringify({
-       'replyToken': replyToken, // = リプライトークン
-       'messages': messages,
+        to: userId,　//ユーザーID
+        messages: messages
      }),
    });
 }
